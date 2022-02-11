@@ -23,7 +23,6 @@ toponym_longitude, toponym_lattitude = toponym_coodrinates.split(" ")
 
 delta = f"{find_spn(toponym_to_find)}"
 map_params = {
-    "ll": ",".join([toponym_longitude, toponym_lattitude]),
     "spn": ",".join([delta, delta]),
     "l": "map",
     "pt": f'{",".join([toponym_longitude, toponym_lattitude])},pmdos'
