@@ -2,7 +2,7 @@ import sys
 
 from pprint import pprint
 import requests
-from funcs3 import find_apteka, find_spn, lonlat_distance, find_10_aptek
+from f3 import find_apteka, find_spn, lonlat_distance, find_10_aptek
 import pygame
 import os
 
