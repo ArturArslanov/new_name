@@ -31,7 +31,6 @@ if __name__ == '__main__':
     distance = round(lonlat_distance(map(float, apteka_coords), (float(toponym_longitude), float(toponym_lattitude))))
     info = f'{info}\nрасстояние - {distance} m'
     map_params = {
-        "ll": ",".join([toponym_longitude, toponym_lattitude]),
         "l": "map",
         "pt": f'{",".join([toponym_longitude, toponym_lattitude])},pmdos1~{",".join(map(str, apteka_coords))},pmgns2',
         'pl': f'{",".join([toponym_longitude, toponym_lattitude])},{",".join(map(str, apteka_coords))}'
